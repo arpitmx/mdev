@@ -36,27 +36,25 @@ def sum(x:int, y:str):
     return x + y
 
 def ins(funcName):
-
-   params = list([inspect.signature(funcName)][0].parameters.values())
-   dict = {}
-   for i in range(0, len(params)):
-       temp = params[i]
-       li = temp.name
-       pa = replace_all(str(temp.annotation).split(" ")[1])
-       dict[li] = pa
-
    print(dict)
 
-def replace_all(text):
+def getParams(funcName:()) -> dict:
+    params = list([inspect.signature(funcName)][0].parameters.values())
+    dict = {}
+    for i in range(0, len(params)):
+        prm = params[i]
+        argName = prm.name
+        argType = format(str(prm.annotation).split(" ")[1])
+        dict[argName] = argType
+
+    return dict
+
+
+def format(text):
     dic = {"'":"",">":""}
     for i, j in dic.items():
         text = text.replace(i, j)
     return text
-
-
-
-
-
 
 ins(sum)
 

@@ -7,5 +7,5 @@ def pretty(d, indent=0):
          print('\t' * (indent+1) + str(value))
 
 def testJson(json_object):
-   with open("test.json", "w") as outfile:
+   with open("mechafiles/Tests/test.json", "w") as outfile:
       outfile.write(json_object)

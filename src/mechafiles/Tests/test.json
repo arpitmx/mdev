@@ -1,0 +1,36 @@
+{
+    "linearLayout": {
+        "class": "layout",
+        "type": "LinearLayout",
+        "specs": {
+            "orientation": "Vertical",
+       er     "title": "Calculator",
+            "height": "mp",
+            "width": "mp"
+        },
+        "children": {
+            "inputX": {
+                "inputX": {
+                    "class": "view",
+                    "type": "EDIT_BOX",
+                    "specs": {
+                        "hint": "Value of X",
+                        "height": "wp",
+                        "width": "mp"
+                    }
+                }
+            },
+            "inputY": {
+                "inputY": {
+                    "class": "view",
+                    "type": "EDIT_BOX",
+                    "specs": {
+                        "hint": "Value of Y",
+                        "height": "wp",
+                        "width": "mp"
+                    }
+                }
+            }
+        }
+    }
+}

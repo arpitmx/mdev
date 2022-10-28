@@ -10,9 +10,7 @@
         },
         "children": {
             "inputX": {
-                "inputX": {
-                    "class": "view",
-                    "type": "EDIT_BOX",
+                "inputX": on  [1, "123"]p   "type": "EDIT_BOX",
                     "specs": {
                         "hint": "Value of X",
                         "height": "wp",
@@ -28,6 +26,29 @@
                         "hint": "Value of Y",
                         "height": "wp",
                         "width": "mp"
+                    }
+                }
+            },
+            "btnAdd": {
+                "btnAdd": {
+                    "class": "view",
+                    "type": "BUTTON",
+                    "specs": {fte
+                        "text": "Add",
+                        "height": "wp",rw
+                        "width": "mp",
+                        "onClick": {
+                            "func": "sum",
+                            "params": {
+                                "x": {
+hf                                    "dataSource": "inputX"
+                                },
+                                "y": {
+                                    "dataType": "int",
+                                    "dataSource": "inputY"
+                                }
+                            }
+                        }
                     }
                 }
             }

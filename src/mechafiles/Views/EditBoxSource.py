@@ -1,10 +1,11 @@
 from src.mechafiles.Handlers import UIElements
 
+
 class EditBox:
 
-
     def __init__(self, id, height, width, hint):
-        self.EditBoxMap = { id: {
+        self.id = id
+        self.EditBoxMap = {id: {
             'class': 'view',
             'type': UIElements.Views.editBox,
             'specs': {
@@ -16,6 +17,9 @@ class EditBox:
 
     def getMap(self):
         return self.EditBoxMap
+
+    def getId(self):
+        return self.id
 #
 # def test():
 #     editbox = EditBox('inputX','mp','mp','Value of x')
@@ -23,5 +27,3 @@ class EditBox:
 #     print(editbox.getMap().keys())
 #
 # test()
-
-
